@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="tab-container">
+    <view wx:for="{{tabs}}" wx:key="*this" id="{{index}}" class="tab-default {{tabs.length-1 != index ? 'tab-border' : ''}} {{activeIndex == index ? 'tab-active' : 'tab-no-active'}}"
+      bindtap='tabClick'>
+      {{item}}
+    </view>
+  </view>
+  <view class="content-container">
+      <view class="list-container" wx:for="{{carForPeopleList}}" hidden="{{activeIndex != 0}}">
+        <view  class="pinche-user" id="{{}}" bindtap='phoneClick'>
+            <image class="user-avatar" src="{{userInfo.avatarUrl}}"></image>
+            <text class="user-nick-name">{{item.name}}</text>
+            <image class="user-phone" src="../../imgs/phone.png"></image>
+        </view>
+        <view  class="pinche-info">
+          <view class="pinche-info-place">
+            <view class="pinche-info-place-from">
+              <image class="place-from" src="../../imgs/from.png"></image>
+              <text class="place-from-name">北京市望京</text>
+            </view>
+            <view class="pinche-info-place-way">
+              <text class="place-way-name">清苑</text>
+            </view>
+            <view class="pinche-info-place-to">
+              <image class="place-from" src="../../imgs/to.png"></image>
+              <text class="place-to-name">博野县杜各庄村</text>
+            </view>
+          </view>
+          <view class="pinche-info-time">
+            <view class="pinche-info-time-from">
+              <image class="time-from" src="../../imgs/time.png"></image>
+              <text class="time-from-name">2018-2-10 下午5:00</text>
+            </view>
+            <view class="pinche-info-time-way">
+            </view>
+            <view class="pinche-info-time-to">
+              <image class="time-from" src="../../imgs/seat.png"></image>
+              <text class="time-from-name">剩余2个座位</text>
+            </view>
+          </view>  
+        </view>
+        <view class="pinche-remark">
+          禁止吸烟   不拉小孩
+        </view>
+      </view>
+      <view class="list-container" hidden="{{activeIndex != 1}}">
+      222
+      </view>
+  </view>
+ 
+</view>

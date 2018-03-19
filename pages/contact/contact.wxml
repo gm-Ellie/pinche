@@ -1,0 +1,5 @@
+<!--pages/contact/contact.wxml-->
+<view>
+  <view>联系电话：15810909125</view>
+  <view>邮箱：gaoman2014@163.com</view>
+</view>

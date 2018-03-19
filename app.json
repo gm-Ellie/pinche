@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/contact/contact"
+  ],
+  "tabBar": {
+    "position": "bottom",
+    "selectedColor": "#2197D8",
+    "backgroundColor": "#fff",
+    "borderStyle": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./imgs/index.png",
+        "selectedIconPath": "./imgs/index-selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "iconPath": "./imgs/person.png",
+        "selectedIconPath": "./imgs/person-selected.png",
+        "text": "联系我们"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#2197D8",
+    "navigationBarTitleText": "去拼车",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  }
+}
